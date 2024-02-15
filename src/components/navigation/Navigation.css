@@ -1,0 +1,28 @@
+#nav {
+  background-color: #232c36;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+}
+
+#nav-left,
+#nav-right {
+  list-style-type: none;
+  color: #fff;
+}
+
+#nav-left {
+  display: flex;
+}
+
+#nav-left li {
+  padding: 20px;
+}
+
+#nav-right {
+  display: flex;
+}
+
+#nav-right li {
+  padding: 20px;
+}
