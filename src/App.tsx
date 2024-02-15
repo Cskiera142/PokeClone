@@ -5,10 +5,12 @@ import ContentBody from "./components/contentBody/ContentBody";
 
 function App() {
   return (
-    <>
+    <div id="App">
       <Navigation />
-      <ContentBody />
-    </>
+      <div id="content-center">
+        <ContentBody />
+      </div>
+    </div>
   );
 }
 

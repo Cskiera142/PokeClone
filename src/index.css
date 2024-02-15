@@ -3,3 +3,21 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  /* colors */
+  --blue: #e5f1ec;
+  --border-green: #4e8234;
+  --card-green: #e0f2b6;
+}
+
+#App {
+  width: 100%;
+  background-color: var(--blue);
+}
+
+#content-center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

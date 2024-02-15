@@ -1,10 +1,10 @@
-import React from "react";
 import "./ContentBody.css";
+import HeroCard from "../heroCard/HeroCard";
 
 function ContentBody() {
   return (
-    <div>
-      <h1>Test</h1>
+    <div id="content">
+      <HeroCard />
     </div>
   );
 }
