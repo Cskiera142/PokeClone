@@ -25,6 +25,15 @@ function HeroCard() {
         If you have any questions, first see the FAQ page. If this doesn't help,
         find an active staff member. They'll point you in the right direction.
       </div>
+      <ul id="hero-nav">
+        <li>Getting started</li>
+        <li>FAQ</li>
+        <li>Lend a Hand</li>
+        <li>Style</li>
+        <li>Policy</li>
+        <li>Staff</li>
+        <li>About Bulbapedia</li>
+      </ul>
     </div>
   );
 }

@@ -1,0 +1,8 @@
+#banner-ad {
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: beige;
+  margin: 2rem 0;
+}

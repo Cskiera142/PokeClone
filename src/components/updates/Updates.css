@@ -1,0 +1,70 @@
+#updates-container {
+  display: flex;
+  justify-content: center;
+}
+
+#dailies {
+  display: flex;
+  flex-direction: row;
+}
+
+#twitch {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  margin-right: 2px;
+}
+
+#twitch div {
+  height: 16rem;
+  background-color: #000;
+}
+
+#daily {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+}
+
+#twitch,
+#daily,
+#editor,
+#browsing {
+  border: 2px solid var(--border-green);
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+#editor {
+  display: flex;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 100%;
+  background-color: var(--header-green);
+  text-align: center;
+  border-radius: 10px;
+}
+
+#browsing {
+  margin-left: 2px;
+}
+
+#browsing ul {
+  list-style: none;
+}
+
+#editor {
+  display: flex;
+  flex-direction: column;
+}
+
+h4 {
+  padding-top: 15px;
+}
