@@ -1,14 +1,15 @@
 import React from "react";
 import "./Navigation.css";
+import { Link } from "react-router-dom";
 
 function Navigation() {
   return (
     <div id="nav">
       <ul id="nav-left">
         <li>BULBAPEDIA</li>
-        <li>News</li>
-        <li>Bulbapdia</li>
-        <li>Forums</li>
+        <Link to="/news">News</Link>
+        <Link to="/">Bulbapedia</Link>
+        <Link to="/forums">Forums</Link>
         <li>Discord</li>
         <li>More</li>
       </ul>

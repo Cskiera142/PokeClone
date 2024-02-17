@@ -15,7 +15,7 @@
   display: flex;
 }
 
-#nav-left li {
+#nav-left Link {
   padding: 20px;
 }
 
@@ -23,6 +23,6 @@
   display: flex;
 }
 
-#nav-right li {
+#nav-right Link {
   padding: 20px;
 }
