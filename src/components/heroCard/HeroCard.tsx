@@ -6,8 +6,8 @@ function HeroCard() {
     <div id="hero-card">
       <p id="conduct-p">
         Please remember to follow the manual of style and code of conduct at all
-        times. Check the Bulbagarden home page for up-to-date Pokémon news and
-        discuss it on the forums or in the Bulbagarden Discord server.
+        times.<br></br> Check the Bulbagarden home page for up-to-date Pokémon
+        news and discuss it on the forums or in the Bulbagarden Discord server.
       </p>
       <div id="welcome">
         <h2>Welcome to Bulbapedia</h2>
@@ -22,18 +22,22 @@ function HeroCard() {
           start editing pages.
         </p>
         <p>We have 52,392 articles on a range of Pokémon-related topics.</p>
-        If you have any questions, first see the FAQ page. If this doesn't help,
-        find an active staff member. They'll point you in the right direction.
+        <p>
+          {" "}
+          If you have any questions, first see the FAQ page. If this doesn't
+          help, find an active staff member. They'll point you in the right
+          direction.
+        </p>
+        <ul id="hero-nav">
+          <li>Getting started</li>
+          <li>FAQ</li>
+          <li>Lend a Hand</li>
+          <li>Style</li>
+          <li>Policy</li>
+          <li>Staff</li>
+          <li>About Bulbapedia</li>
+        </ul>
       </div>
-      <ul id="hero-nav">
-        <li>Getting started</li>
-        <li>FAQ</li>
-        <li>Lend a Hand</li>
-        <li>Style</li>
-        <li>Policy</li>
-        <li>Staff</li>
-        <li>About Bulbapedia</li>
-      </ul>
     </div>
   );
 }

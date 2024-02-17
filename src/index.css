@@ -10,9 +10,12 @@
   --border-green: #4e8234;
   --card-green: #e0f2b6;
   --header-green: #c4e673;
+  --banner-beige: rgb(245, 245, 220);
 }
 
 #App {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   background-color: var(--blue);
 }
