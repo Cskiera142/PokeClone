@@ -4,8 +4,11 @@ import { Link } from "react-router-dom";
 import Modal from "react-modal";
 
 function Navigation() {
-  let subtitle;
   const [modalIsOpen, setIsOpen] = useState(false);
+
+  function componentWillMount() {
+    Modal.setAppElement("body");
+  }
 
   function openModal() {
     setIsOpen(true);
@@ -20,22 +23,84 @@ function Navigation() {
       <ul id="nav-left">
         <div>BULBAPEDIA</div>
         <Link to="/news">News</Link>
-        <button onClick={openModal}>Bulbapedia</button>
-        <Modal
-          isOpen={modalIsOpen}
-          onRequestClose={closeModal}
-          contentLabel="Example Modal"
+        <Link
+          className="bulbapedia-nav-link"
+          style={{ display: "block" }}
+          to={"/"}
+          onMouseEnter={openModal}
+          onMouseLeave={closeModal}
         >
-          <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Hello</h2>
-          <button onClick={closeModal}>close</button>
-          <div>I am a modal</div>
-          <form>
-            <input />
-            <button>tab navigation</button>
-            <button>stays</button>
-            <button>inside</button>
-            <button>the modal</button>
-          </form>
+          Bulbapedia
+        </Link>
+        <Modal
+          className="modal"
+          ariaHideApp={false}
+          isOpen={modalIsOpen}
+          onAfterOpen={componentWillMount}
+          onRequestClose={closeModal}
+          contentLabel="navigation modal"
+        >
+          <button>Bulbapedia main page</button>
+          <div id="modal-lists">
+            <ul>
+              <li style={{ textDecoration: "underline" }}>Pokemon</li>
+              <li>National Pokedex</li>
+              <li>By Name</li>
+              <li>Legendary</li>
+              <li>Mythical</li>
+              <li>Event Pokemon</li>
+              <li>Noble Pokemon</li>
+              <li>Gigantamax</li>
+              <li>Alpha Pokemon</li>
+            </ul>
+            <ul>
+              <li style={{ textDecoration: "underline" }}>Mechanics</li>
+              <li>Types</li>
+              <li>Type Chart</li>
+              <li>Abilities</li>
+              <li>Nature</li>
+              <li>Status Conditions</li>
+              <li>Moves</li>
+              <li>Items</li>
+            </ul>
+            <ul>
+              <li style={{ textDecoration: "underline" }}>Games</li>
+              <li>Walkthroughs</li>
+              <li>
+                Pokemon Legends:
+                <br />
+                Arceus
+              </li>
+              <li>
+                Pokemon Brilliant
+                <br />
+                Diamond and Shining
+                <br />
+                Pearl
+              </li>
+              <li>Sword & Shield</li>
+              <li>Spin Offs</li>
+              <li>GO</li>
+            </ul>
+            <ul>
+              <li style={{ textDecoration: "underline" }}>TCG</li>
+              <li>About</li>
+              <li>How to Play</li>
+              <li>Rotation</li>
+              <li>Promotional Cards</li>
+              <li>Brilliant Stars</li>
+              <li>Fusion Strike</li>
+            </ul>
+            <ul>
+              <li style={{ textDecoration: "underline" }}>Anime & Manga</li>
+              <li>Ash Ketchum</li>
+              <li>Anime</li>
+              <li>Anime Characters</li>
+              <li>Journeys Episodes</li>
+              <li>Movies</li>
+              <li>Manga</li>
+            </ul>
+          </div>
         </Modal>
         <Link to="/forums">Forums</Link>
         <li>Discord</li>
