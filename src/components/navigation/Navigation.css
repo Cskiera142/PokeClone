@@ -69,3 +69,10 @@ Link {
   list-style: none;
   line-height: 20px;
 }
+
+#search {
+  padding: 5px 0px 5px 8px;
+  border-radius: 20px;
+  border: none;
+  font-size: 10px;
+}
