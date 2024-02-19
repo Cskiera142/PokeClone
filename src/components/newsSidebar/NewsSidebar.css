@@ -1,0 +1,6 @@
+#news-sidebar-container {
+  width: 300px;
+  min-height: 300px;
+  background-color: aliceblue;
+  border-radius: 15px;
+}

@@ -1,0 +1,20 @@
+#news-Nav {
+  display: flex;
+  flex-direction: column;
+}
+
+#news-nav div {
+  display: flex;
+  justify-content: right;
+}
+
+#news-nav div h3 {
+  background-color: #e71e26;
+}
+
+#news-Nav ul {
+  display: flex;
+  gap: 18px;
+  list-style: none;
+  font-size: 14px;
+}

@@ -1,9 +1,10 @@
 import React from "react";
+import NewsContent from "../../components/newsContent/NewsContent";
 
 function News() {
   return (
     <div>
-      <h1>Hello World</h1>
+      <NewsContent />
     </div>
   );
 }

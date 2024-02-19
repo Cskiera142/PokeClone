@@ -3,12 +3,17 @@
   display: flex;
   justify-content: space-between;
   height: 60px;
+  padding: 2rem;
 }
 
 #nav-left,
 #nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
   list-style-type: none;
   color: #fff;
+  font-size: 20px;
 }
 
 #nav-left {
@@ -25,4 +30,9 @@
 
 #nav-right Link {
   padding: 20px;
+}
+
+Link {
+  text-decoration: none;
+  background-color: aliceblue;
 }

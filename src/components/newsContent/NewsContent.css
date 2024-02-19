@@ -1,0 +1,5 @@
+#news-flex {
+  display: flex;
+  flex-direction: row;
+  margin-top: 60px;
+}

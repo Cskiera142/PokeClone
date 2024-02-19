@@ -25,3 +25,8 @@
   display: flex;
   justify-content: center;
 }
+
+Link:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
