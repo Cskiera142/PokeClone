@@ -12,6 +12,7 @@
   --card-green: #e0f2b6;
   --header-green: #c4e673;
   --banner-beige: rgb(245, 245, 220);
+  --base-content-background: #fff;
 }
 
 #App {

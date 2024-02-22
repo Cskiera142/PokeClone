@@ -1,0 +1,16 @@
+#nationalPokedex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#nationalPokedex-content {
+  margin-top: 2rem;
+  border: 1px solid var(--border-green);
+  background-color: var(--base-content-background);
+  padding: 2rem;
+  border-radius: 10px;
+  height: 100svh;
+  width: fit-content;
+}

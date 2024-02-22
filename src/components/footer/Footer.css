@@ -1,6 +1,8 @@
 #footer {
   border-top: 1px solid #fabd23;
   background-color: var(--banner-beige);
+  font-size: 10px;
+  width: 100vw;
 }
 
 #footer-list {
