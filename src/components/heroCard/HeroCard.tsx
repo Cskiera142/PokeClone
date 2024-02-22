@@ -1,14 +1,11 @@
 import React from "react";
 import "./HeroCard.css";
+import PleaseRememberHeader from "../pleaseRememberHeader/PleaseRememberHeader";
 
 function HeroCard() {
   return (
     <div id="hero-card">
-      <p id="conduct-p">
-        Please remember to follow the manual of style and code of conduct at all
-        times.<br></br> Check the Bulbagarden home page for up-to-date Pokémon
-        news and discuss it on the forums or in the Bulbagarden Discord server.
-      </p>
+      <PleaseRememberHeader />
       <div id="welcome">
         <h2>Welcome to Bulbapedia</h2>
         <h5>the community-driven Pokémon encyclopedia</h5>

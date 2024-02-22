@@ -1,0 +1,8 @@
+#conduct-p {
+  text-align: center;
+  font-size: 12px;
+  border: 1px solid #4e8234;
+  border-radius: 10px;
+  padding: 0.5rem 8rem;
+  background-color: var(--base-content-background);
+}
