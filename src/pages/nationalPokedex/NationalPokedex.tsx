@@ -1,28 +1,35 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./NationalPokedex.css";
-import { BASE_URL } from "../../config";
+// import { BASE_URL } from "../../config";
 import Footer from "../../components/footer/Footer";
-import FooterAd from "../../components/footerAd/FooterAd";
 import PleaseRememberHeader from "../../components/pleaseRememberHeader/PleaseRememberHeader";
 import BannerAd from "../../components/bannerAd/BannerAd";
 
-interface Pokemon {
-  // Define the structure of your Pokemon object
-  // For example, name, id, etc.
-}
+const BASE_URL = `https://pokeapi.co/api/v2/`;
 
 function NationalPokedex() {
+  const [pokemonList, setPokemonList] = useState([]);
+
   useEffect(() => {
     const fetchPokemon = async () => {
-      const url = `${BASE_URL}pokemon`;
+      const url = `${BASE_URL}pokemon/`;
       try {
         const response = await fetch(url);
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
 
-        const data: Pokemon[] = await response.json();
-        console.log(data);
+        const responseData = await response.json();
+        const data = responseData.results;
+        console.log(data.id);
+
+        const pokemonWithId = data.map((pokemon, index) => ({
+          ...pokemon,
+          id: index,
+        }));
+
+        setPokemonList(pokemonWithId);
+        console.log(pokemonWithId);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -30,6 +37,28 @@ function NationalPokedex() {
 
     fetchPokemon();
   }, []);
+
+  const generations = {
+    1: [],
+    2: [],
+    3: [],
+    4: [],
+    5: [],
+    6: [],
+    7: [],
+    8: [],
+    9: [],
+  };
+
+  pokemonList.forEach((pokemon) => {
+    if (pokemon.id <= 151) {
+      generations[1].push(pokemon);
+    } else if (pokemon.id <= 251) {
+      generations[2].push(pokemon);
+    } else if (pokemon.id <= 386) {
+      generations[3].push(pokemon);
+    }
+  });
 
   return (
     <div id="nationalPokedex-center">
@@ -96,6 +125,7 @@ function NationalPokedex() {
         <h3>List of Pokémon by National Pokédex number</h3>
         <hr style={{ marginBottom: "1rem" }}></hr>
       </div>
+      <div id="generation-container"></div>
       <Footer />
     </div>
   );
