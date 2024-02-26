@@ -1,11 +1,10 @@
-import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Navigation from "./components/navigation/Navigation";
 import LandingPage from "./pages/landingPage/LandingPage";
 import News from "./pages/news/News";
-import { BASE_URL } from "./config";
 import "./index.css";
 import NationalPokedex from "./pages/nationalPokedex/NationalPokedex";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -23,6 +22,7 @@ function App() {
           <Route path="/discord" element={<LandingPage />} /> */}
         </Routes>
       </div>
+      <Footer />
     </div>
   );
 }

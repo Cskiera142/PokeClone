@@ -7,13 +7,12 @@ import Footer from "../../components/footer/Footer";
 
 function LandingPage() {
   return (
-    <div id="content">
+    <div id="landingPage-content">
       <HeroCard />
       <BannerAd />
       <Updates />
       <Accessibility />
-      <BannerAd style={{ backgroundColor: "transparent" }} />
-      <Footer />
+      <BannerAd />
     </div>
   );
 }

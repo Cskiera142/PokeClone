@@ -21,7 +21,7 @@ function Navigation() {
   return (
     <div id="nav">
       <ul id="nav-left">
-        <div>BULBAPEDIA</div>
+        <div style={{ marginRight: "1rem" }}>BULBAGARDEN</div>
         <Link to="/news">News</Link>
         <Link
           className="bulbapedia-nav-link"

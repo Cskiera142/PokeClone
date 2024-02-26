@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   height: 40px;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 #nav-left,
@@ -13,7 +13,7 @@
   gap: 12px;
   list-style-type: none;
   color: #fff;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 #nav-left {

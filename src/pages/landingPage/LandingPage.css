@@ -1,7 +1,7 @@
-#content {
+#landingPage-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   width: 1100px;
   margin: 3rem;
   padding: 2rem 3rem;
