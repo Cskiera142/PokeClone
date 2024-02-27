@@ -3,7 +3,6 @@ import BannerAd from "../../components/bannerAd/BannerAd";
 import Updates from "../../components/updates/Updates";
 import Accessibility from "../../components/accessibility/Accessibility";
 import "./LandingPage.css";
-import Footer from "../../components/footer/Footer";
 
 function LandingPage() {
   return (

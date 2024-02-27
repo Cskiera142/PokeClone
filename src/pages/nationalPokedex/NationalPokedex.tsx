@@ -261,7 +261,7 @@ function NationalPokedex() {
                     <img src={pokemon.image} alt={pokemon.name} />
                     <div>{pokemon.name}</div>
                     <div className="types-container">
-                      {pokemon.types.map((type, index) => (
+                      {pokemon.types.map((type) => (
                         <div
                           key={type}
                           className="type-element"
