@@ -1,4 +1,3 @@
-import React from "react";
 import "./NewsNav.css";
 
 function NewsNav() {

@@ -1,6 +1,4 @@
-import React from "react";
 import "./Footer.css";
-import BannerAd from "../bannerAd/BannerAd";
 import FooterAd from "../footerAd/FooterAd";
 function Footer() {
   return (
