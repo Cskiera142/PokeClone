@@ -1,4 +1,3 @@
-import React from "react";
 import "./Updates.css";
 
 function Updates() {

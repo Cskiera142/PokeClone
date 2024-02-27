@@ -1,4 +1,3 @@
-import React from "react";
 import "./FooterAd.css";
 
 function FooterAd() {

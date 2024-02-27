@@ -1,4 +1,3 @@
-import React from "react";
 import NewsNav from "../newsNav/NewsNav";
 import NewsMain from "../newsMain/NewsMain";
 import NewsSidebar from "../newsSidebar/NewsSidebar";
