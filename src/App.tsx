@@ -5,6 +5,7 @@ import News from "./pages/news/News";
 import "./index.css";
 import NationalPokedex from "./pages/nationalPokedex/NationalPokedex";
 import Footer from "./components/footer/Footer";
+import ByNamePage from "./pages/byNamePage/ByNamePage";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             path="/List_of_Pokemon_by_National_Pokedex_number"
             element={<NationalPokedex />}
           />
+          <Route path="/List_of_Pokémon_by_name" element={<ByNamePage />} />
           {/* <Route path="/forums" element={<LandingPage />} />
           <Route path="/discord" element={<LandingPage />} /> */}
         </Routes>

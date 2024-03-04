@@ -55,7 +55,7 @@ function Navigation() {
                   <Link to="/List_of_Pokemon_by_National_Pokedex_number">
                     National Pokedex
                   </Link>
-                  <li>By Name</li>
+                  <Link to="/List_of_Pokémon_by_name">By Name</Link>
                   <li>Legendary</li>
                   <li>Mythical</li>
                   <li>Event Pokemon</li>

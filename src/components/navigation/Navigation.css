@@ -84,9 +84,10 @@ Link {
   padding: 1rem;
   background-color: #eeffee;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
+  margin-bottom: 1rem;
 }
 
 #bulba-nav-ul-flex {
@@ -96,9 +97,10 @@ Link {
 }
 
 #bulba-nav-lists ul {
+  display: flex;
+  flex-direction: column;
   list-style: none;
   line-height: 2rem;
-  gap: 6rem;
   font-size: 14px;
   white-space: nowrap;
 }
